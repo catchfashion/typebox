@@ -1,6 +1,6 @@
 {
   "name": "@catchfashion/typebox",
-  "version": "0.10.1",
+  "version": "1.0.0",
   "description": "JSONSchema Type Builder with Static Type Resolution for TypeScript",
   "keywords": [
     "json-schema",
