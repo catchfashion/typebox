@@ -1,5 +1,5 @@
 {
-  "name": "@sinclair/typebox",
+  "name": "@catchfashion/typebox",
   "version": "0.10.1",
   "description": "JSONSchema Type Builder with Static Type Resolution for TypeScript",
   "keywords": [
@@ -8,13 +8,16 @@
     "static-types",
     "runtime-typechecking"
   ],
-  "author": "sinclairzx81",
+  "author": "Catch Fashion",
   "license": "MIT",
   "main": "./typebox.js",
   "types": "./typebox.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sinclairzx81/typebox"
+    "url": "https://github.com/catchfashion/typebox"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "clean": "smoke-task clean",
