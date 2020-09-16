@@ -1,9 +1,9 @@
 name: GitHub CI
 
-on: [push, pull_request]
+on: push
 
 jobs:
-  npm:
+  job:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
