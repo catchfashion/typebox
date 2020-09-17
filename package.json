@@ -10,8 +10,15 @@
   ],
   "author": "Catch Fashion",
   "license": "MIT",
-  "main": "./typebox.js",
-  "types": "./typebox.d.ts",
+  "main": "dist/typebox.js",
+  "types": "dist/typebox.d.ts",
+  "files": [
+    "license",
+    "CHANGELOG.md",
+    "readme.md",
+    "dist/typebox.js",
+    "dist/typebox.d.ts"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/catchfashion/typebox"
@@ -20,9 +27,11 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "smoke-task clean",
-    "build": "smoke-task build",
-    "test": "smoke-task spec"
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "mocha -r ts-node/register 'spec/**/*.ts'",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
@@ -36,8 +45,7 @@
     "chai": "^4.1.2",
     "mocha": "^7.1.1",
     "semantic-release": "^17.1.1",
-    "smoke-task": "^1.1.2",
-    "typescript": "^4.0.2",
-    "typescript-bundle": "^1.0.16"
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
   }
 }

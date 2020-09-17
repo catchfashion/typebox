@@ -7,10 +7,6 @@
     "lib": [
       "ESNext"
     ],
-    "declaration": true,
-    "outDir": "../dist/",
-  },
-  "files": [
-    "typebox.ts"
-  ]
+    "declaration": true
+  }
 }
