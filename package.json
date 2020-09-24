@@ -1,5 +1,5 @@
 {
-  "name": "@catchfashion/typebox",
+  "name": "@serverless-seoul/typebox",
   "version": "1.0.1",
   "description": "JSONSchema Type Builder with Static Type Resolution for TypeScript",
   "keywords": [
