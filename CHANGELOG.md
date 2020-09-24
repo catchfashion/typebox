@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/catchfashion/typebox/compare/v1.0.1...v1.0.2) (2020-09-24)
+
+
+### Bug Fixes
+
+* **package:** move package to [@serverless-seoul](https://github.com/serverless-seoul) org ([100a258](https://github.com/catchfashion/typebox/commit/100a258f768fd37df725d1ef0db80d326323411c))
+
 ## [1.0.1](https://github.com/catchfashion/typebox/compare/v1.0.0...v1.0.1) (2020-09-17)
 
 
