@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/catchfashion/typebox/compare/v1.0.2...v1.0.3) (2020-09-24)
+
+
+### Bug Fixes
+
+* **package:** fix broken package release ([0ffdb08](https://github.com/catchfashion/typebox/commit/0ffdb089550e9f168eefe699da4d2a6527ff494b))
+
 ## [1.0.2](https://github.com/catchfashion/typebox/compare/v1.0.1...v1.0.2) (2020-09-24)
 
 

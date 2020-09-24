@@ -1,6 +1,6 @@
 {
   "name": "@serverless-seoul/typebox",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JSONSchema Type Builder with Static Type Resolution for TypeScript",
   "keywords": [
     "json-schema",
