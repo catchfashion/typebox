@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/catchfashion/typebox/compare/v1.0.3...v1.0.4) (2020-09-24)
+
+
+### Bug Fixes
+
+* make TModifier type to non-any type ([161ec76](https://github.com/catchfashion/typebox/commit/161ec76d366c9f00df392198abccd2ea7f24a777))
+
 ## [1.0.3](https://github.com/catchfashion/typebox/compare/v1.0.2...v1.0.3) (2020-09-24)
 
 
