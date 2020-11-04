@@ -30,7 +30,7 @@
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
     "build": "tsc -p tsconfig.build.json",
-    "test": "mocha -r ts-node/register 'spec/**/*.ts'",
+    "test": "mocha -r ts-node/register 'spec/index.ts'",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

@@ -1,9 +1,9 @@
-import { Type } from '../src/typebox'
+import { Type } from '../../src/typebox'
 import { ok, fail } from './validate'
 
-describe("Any", () => {
-  it('Any',  () => {
-    const T = Type.Any()
+describe("Unknown", () => {
+  it('Unknown', () => {
+    const T = Type.Unknown()
     ok(T, null)
     ok(T, {})
     ok(T, [])

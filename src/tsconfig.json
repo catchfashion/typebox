@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "CommonJS",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ESNext"],
+    "declaration": true,
+    "outDir": "../dist/",
+  },
+  "files": [
+    "typebox.ts"
+  ]
+}
