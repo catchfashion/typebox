@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/catchfashion/typebox/compare/v1.0.4...v1.1.0) (2020-11-04)
+
+
+### Features
+
+* merge upstream typebox changes ([4c75205](https://github.com/catchfashion/typebox/commit/4c752056bc0bafcfd0959931205789a1eeeaf8d0))
+
 ## [1.0.4](https://github.com/catchfashion/typebox/compare/v1.0.3...v1.0.4) (2020-09-24)
 
 
