@@ -1,3 +1,25 @@
+# [2.0.0](https://github.com/catchfashion/typebox/compare/v1.1.0...v2.0.0) (2021-07-06)
+
+
+### Bug Fixes
+
+* Allow intersect duplicated required ([#68](https://github.com/catchfashion/typebox/issues/68)) ([e6de056](https://github.com/catchfashion/typebox/commit/e6de056eb59372dcaf839be03bf4c318c2ed9963))
+
+
+### Features
+
+* merge upstream changes ([65eee4a](https://github.com/catchfashion/typebox/commit/65eee4a4e545a0f0457d4c9010a3f811b381cf73))
+
+
+* Let Composition types to rely on variadic tuple types (#36) ([168c7ed](https://github.com/catchfashion/typebox/commit/168c7ed2f7592e5b05ac2e72c0f71290a2b0852f)), closes [#36](https://github.com/catchfashion/typebox/issues/36)
+
+
+### BREAKING CHANGES
+
+* Requires TypeScript 4
+
+* fix: make TModifier type to non-any type
+
 # [1.1.0](https://github.com/catchfashion/typebox/compare/v1.0.4...v1.1.0) (2020-11-04)
 
 
