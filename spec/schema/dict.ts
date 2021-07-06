@@ -1,4 +1,4 @@
-import { Type } from '../../src/typebox'
+import { Type } from '@sinclair/typebox'
 import { ok, fail } from './validate'
 
 describe('Dict', () => {
@@ -17,7 +17,7 @@ describe('Dict', () => {
   it('Dict <string, A>',  () => {
     const A = Type.String()
     const T = Type.Dict(A)
-
+  
     ok(T, { key: 'hello' })
     fail(T, { key: 32 })
     fail(T, { key: true })

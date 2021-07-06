@@ -1,12 +1,24 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "CommonJS",
     "target": "ESNext",
     "moduleResolution": "node",
-    "lib": [
-      "ESNext"
-    ],
-    "declaration": true
+    "removeComments": true,
+    "lib": ["ESNext"],
+<<<<<<<< HEAD:tsconfig.json
+    "baseUrl": ".",
+    "paths": {
+      "@sinclair/typebox": ["src/typebox.ts"]
+    }
   }
+========
+    "alwaysStrict": true,
+    "outFile": "../spec.js",
+    "baseUrl": ".",
+    "paths": {
+      "@sinclair/typebox": ["../src/typebox.ts"]
+    }
+  },
+  "files": ["index.ts"]
+>>>>>>>> bf49be8936d4f6ae2310c1300cd8c29717d8d56e:spec/tsconfig.json
 }

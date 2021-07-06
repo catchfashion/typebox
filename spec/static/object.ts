@@ -1,4 +1,4 @@
-import { Type, Static } from '../../src/typebox'
+import { Type, Static } from '@sinclair/typebox'
 
 // --------------------------------------------
 
@@ -18,8 +18,8 @@ F0({
     a: 1,
     b: '',
     c: true,
-    d: {
-        e: ['']
+    d: { 
+        e: [''] 
     },
     e: { a: '' }
 })

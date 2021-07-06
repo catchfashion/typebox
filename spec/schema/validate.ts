@@ -1,7 +1,29 @@
-import * as Ajv from 'ajv'
+import { TSchema } from '@sinclair/typebox'
+import addFormats from 'ajv-formats'
+import Ajv        from 'ajv'
 
-export function ok(type: any, data: any) {
-  const ajv = new Ajv({})
+const ajv = addFormats(new Ajv(), [
+  'date-time', 
+  'time', 
+  'date', 
+  'email',  
+  'hostname', 
+  'ipv4', 
+  'ipv6', 
+  'uri', 
+  'uri-reference', 
+  'uuid',
+  'uri-template', 
+  'json-pointer', 
+  'relative-json-pointer', 
+  'regex'
+])
+.addKeyword('kind')
+.addKeyword('modifier')
+
+
+
+export function ok<T extends TSchema>(type: T, data: unknown) {
   const result = ajv.validate(type, data) as boolean
   if (result === false) {
     console.log('---------------------------')
@@ -20,8 +42,7 @@ export function ok(type: any, data: any) {
   }
 }
 
-export function fail(type: any, data: any) {
-  const ajv = new Ajv({})
+export function fail<T extends TSchema>(type: T, data: unknown) {
   const result = ajv.validate(type, data) as boolean
   if (result === true) {
     console.log('---------------------------')
@@ -35,4 +56,25 @@ export function fail(type: any, data: any) {
     console.log('---------------------------')
     throw Error('expected fail')
   }
+}
+
+export function createValidator() {
+  return addFormats(new Ajv(), [
+    'date-time', 
+    'time', 
+    'date', 
+    'email',  
+    'hostname', 
+    'ipv4', 
+    'ipv6', 
+    'uri', 
+    'uri-reference', 
+    'uuid',
+    'uri-template', 
+    'json-pointer', 
+    'relative-json-pointer', 
+    'regex'
+  ])
+  .addKeyword('kind')
+  .addKeyword('modifier')
 }
