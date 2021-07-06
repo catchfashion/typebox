@@ -23,7 +23,7 @@ export async function build(target = 'target/build') {
     await folder(target).add('package.json')
     await folder(target).add('readme.md')
     await folder(target).add('license')
-    await shell(`cd ${target} && npm pack`)
+    // await shell(`cd ${target} && npm pack`)
     
     // npm publish sinclair-typebox-0.x.x.tgz --access=public
 }
